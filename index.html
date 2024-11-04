@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Iconos Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> <!-- Font Awesome Bootstrap-->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <title>M5_Consolidacion - MJimenez</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark pkdx-nav">
+        <img src="Assets/IMG/pkdx-nav-buttons.svg" class="pkdx-nav-buttons" alt="Pokédex Logo">  
+    </nav>
+</header>
+
+<main>
+
+<section>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <!-- COL 1 - SIDE BAR -->
+            <div class="col-12 col-lg-2 order-1 order-lg-1">
+                <div class="container pkdx-sidebar">
+                    <!-- Contenido de la barra lateral -->
+                    <ul class="list-group list-group-flush gap-2 d-flex flex-wrap" id="listType">
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center  bg-dark">
+                            <input type="checkbox" class="form-check-input me-2" value="VER TODOS" />
+                            <img src="Assets/IMG/Types/Poké_Ball_(Dream_World).png" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">VER TODOS</span>
+                        </li>
+                        
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center  type__normal">
+                            <input type="checkbox" class="form-check-input me-2" value="NORMAL"/>
+                            <img src="Assets/IMG/Types/Normal.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">NORMAL</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__fire">
+                            <input type="checkbox" class="form-check-input me-2" value="FIRE"/>
+                            <img src="Assets/IMG/Types/Fire.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">FUEGO</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__water">
+                            <input type="checkbox" class="form-check-input me-2" value="WATER" />
+                            <img src="Assets/IMG/Types/Water.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">AGUA</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__grass">
+                            <input type="checkbox" class="form-check-input me-2" value="GRASS" />
+                            <img src="Assets/IMG/Types/Grass.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">PLANTA</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__electric">
+                            <input type="checkbox" class="form-check-input me-2" value="ELECTRIC" />
+                            <img src="Assets/IMG/Types/Electric.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">ELÉCTRICO</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__ice">
+                            <input type="checkbox" class="form-check-input me-2" value="ICE" />
+                            <img src="Assets/IMG/Types/Ice.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">HIELO</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__fighting">
+                            <input type="checkbox" class="form-check-input me-2" value="FIGHTING" />
+                            <img src="Assets/IMG/Types/Fighting.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">LUCHA</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__poison">
+                            <input type="checkbox" class="form-check-input me-2" value="POISON" />
+                            <img src="Assets/IMG/Types/Poison.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">VENENO</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__ground">
+                            <input type="checkbox" class="form-check-input me-2" value="GROUND" />
+                            <img src="Assets/IMG/Types/Ground.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">TIERRA</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__flying">
+                            <input type="checkbox" class="form-check-input me-2" value="FLYING" />
+                            <img src="Assets/IMG/Types/Flying.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">VOLADOR</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__psychic">
+                            <input type="checkbox" class="form-check-input me-2" value="PSYCHIC" />
+                            <img src="Assets/IMG/Types/Psychic.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">PSÍQUICO</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__bug">
+                            <input type="checkbox" class="form-check-input me-2" value="BUG" />
+                            <img src="Assets/IMG/Types/Bug.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">BICHO</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__rock">
+                            <input type="checkbox" class="form-check-input me-2" value="ROCK" />
+                            <img src="Assets/IMG/Types/Rock.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">ROCA</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__ghost">
+                            <input type="checkbox" class="form-check-input me-2" value="GHOST" />
+                            <img src="Assets/IMG/Types/Ghost.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">FANTASMA</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__dragon">
+                            <input type="checkbox" class="form-check-input me-2" value="DRAGON" />
+                            <img src="Assets/IMG/Types/Dragon.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">DRAGON</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__steel">
+                            <input type="checkbox" class="form-check-input me-2" value="STEEL" />
+                            <img src="Assets/IMG/Types/Steel.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">ACERO</span>
+                        </li>
+                        <li class="list-group-item text-white rounded-pill d-flex align-items-center type__fairy">
+                            <input type="checkbox" class="form-check-input me-2" value="FAIRY" />
+                            <img src="Assets/IMG/Types/Fairy.svg" class="pokemon-type-img me-2" />
+                            <span class="form-check-label fw-bold fs-5">HADA</span>
+                        </li>
+                    </ul>
+
+                </div>              
+            </div>
+    
+            <!-- COL 2 - CONTENEDOR PRINCIPAL -->
+            <div class="col-12 col-lg-8 order-2">
+                <div class="container pkdx-container overflow-auto" id="listPokemon" >
+                    <div class="row row-cols-1 row-cols-md-3 g-3">
+                        <!-- Aquí se insertarán las tarjetas de Pokémon-->
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- COL 3 - Profesor OAK -->
+            <div class="col-12 col-lg-2 d-none d-lg-flex align-items-end position-relative order-3">
+                <img src="Assets/IMG/Profesor_Oak.jpg" alt="Vendedor" class="img-fluid" style="max-height: 50vh;">
+                <div class="oak__dialog border border-3">
+                  <p>¡Hola joven! Esta es la PokeDex de la región de Kanto, te ayudará en tu camino para convertirte en  Maestro Pokemon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+</section>
+
+</main>
+
+<footer class="pkdx-footer text-light text-center py-3 fixed-bottom">
+    <div class="container">      
+        <img src="Assets/IMG/Pokemon-Logo.svg" alt="Pokemon Logo" width="100" height="auto" class="mb-3">
+        <p class="mb-0">© 2024 Pokémon. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+
+<script src="Assets/JS/Script.js" ></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #AA3030;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* Navbar */
+.pkdx-nav {
+    margin-bottom: 6rem;
+    height: 64px;
+    background-color: #d14444;
+}
+
+.pkdx-nav:after {
+    border-top: 60px solid #d14444;
+    border-right: 40px solid transparent;
+    height: 0;
+    width: 50%;
+    position: absolute;
+    content: "";
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+.pkdx-nav-buttons {
+    height: 72px;
+    position: absolute;
+    z-index: 9999;
+    margin-top: 20px
+}
+
+.pkdx-footer {
+    background-color: #d14444;
+} 
+
+/* COL-1 SIDE BAR */
+.pkdx-sidebar {
+    background-color: #ECECEC;
+    padding: 20px;
+    border-radius: 8px;
+    border: 20px #d14444 solid;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.pokemon-type-img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+/* Tags de Tipos */
+
+
+.type__normal{
+    background: #9FA19F;
+}
+
+.type__fire{
+    background: #E62829;
+}
+.type__water{
+    background: #2980EF;
+}
+
+.type__grass{
+    background: #3FA129;
+}
+
+.type__electric{
+    background: #FAC000;
+}
+
+.type__ice{
+    background: #3FD8FF;
+}
+
+.type__fighting{
+    background: #FF8000;
+}
+
+.type__poison{
+    background: #974FCF;
+}
+
+.type__poison{
+    background: #8F41CB;
+}
+
+.type__ground{
+    background: #915121;
+}
+
+.type__flying{
+    background: #81B9EF;
+}
+
+.type__psychic{
+    background: #EF4179;
+}
+
+.type__bug{
+    background: #91A119;
+}
+
+.type__rock{
+    background: #AFA981;
+}
+
+.type__ghost{
+    background: #704170;
+}
+
+.type__dragon{
+    background: #5061E1;
+}
+
+.type__steel{
+    background: #60A1B8;
+}
+
+.type__fairy{
+    background: #EF71EF
+}
+
+
+/* COL-2 CONTENEDOR PRINCIPAL */
+
+.pkdx-container {
+    height: 70vh;
+    background-color: #ECECEC;
+    padding: 20px;
+    border-radius: 8px;
+    border: 20px #d14444 solid;
+    overflow: hidden;
+}
+
+
+/* BOOTSTRAP CARD DESDE AQUÍ */
+
+.bg-custom{
+    background: #F7F7F7;
+}
+
+.pokemon-id-back-bs {
+    position: absolute;    
+    left: 50%;
+    margin-bottom: 0;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.1);
+    z-index: 1;
+}
+
+.pokemon-imagen-bs img {
+    position: relative;
+    width: 100%;
+    max-width: 6rem;
+    z-index: 2;
+}
+
+.type-tag {
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/* COL-3 Profesor OAK*/
+
+.oak__dialog {
+    position: absolute;
+    bottom: 75%;
+    left: 40%;
+    transform: translateX(-50%);
+    padding: 10px 8px;
+    max-width: 250px;
+    background-color: #F7F7F7; 
+    color: #000; 
+    font-family: 'PkmnRBYGSC', sans-serif; 
+    border: 4px solid #000; 
+    box-shadow: 
+        0 0 0 4px #000, 
+        0 0 0 8px #F7F7F7, 
+        0 0 0 12px #000; 
+    text-align: center;
+    line-height: 1.4;
+}
+
+.oak__dialog p {
+    margin: 0;
+    padding: 0;
+}
